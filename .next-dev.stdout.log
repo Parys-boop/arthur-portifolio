@@ -1,0 +1,15 @@
+
+> arthur-portfolio@0.1.0 dev
+> next dev
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.100.123:3000
+
+✓ Starting...
+Creating turbopack project {
+  dir: 'C:\\Users\\Aluno\\Downloads\\Nova pasta\\arthur-portfolio',
+  testMode: true
+}
+✓ Ready in 945ms
+ GET / 200 in 2.2s (compile: 1834ms, render: 365ms)
