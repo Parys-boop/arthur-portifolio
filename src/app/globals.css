@@ -34,16 +34,16 @@ html {
 }
 
 html[data-contrast="high"] {
-  --color-bg: #000000;
-  --color-surface: #000000;
-  --color-primary: #ffffff;
-  --color-primary-dark: #d4c0ff;
-  --color-accent: #ffffff;
-  --color-accent-soft: #ffffff;
-  --color-text: #ffffff;
-  --color-text-strong: #ffffff;
-  --color-muted: #111111;
-  color-scheme: dark;
+  --color-bg: #f6f1e6;
+  --color-surface: #fffdf8;
+  --color-primary: #111111;
+  --color-primary-dark: #111111;
+  --color-accent: #111111;
+  --color-accent-soft: #111111;
+  --color-text: #181818;
+  --color-text-strong: #050505;
+  --color-muted: #d7cfbf;
+  color-scheme: light;
 }
 
 body {
@@ -87,13 +87,24 @@ html.enhanced-focus :focus-visible {
 
 html[data-contrast="high"] body {
   background:
-    linear-gradient(180deg, #000000 0%, #000000 100%);
+    radial-gradient(circle at top, rgb(17 17 17 / 0.08), transparent 32%),
+    linear-gradient(180deg, #fffdf8 0%, #f5efe1 52%, #ede4d2 100%);
+}
+
+html[data-contrast="high"] body::selection {
+  background: #111111;
+  color: #ffffff;
 }
 
 html[data-contrast="high"] .hero-surface,
 html[data-contrast="high"] .panel-card {
-  background: #000000;
-  box-shadow: none;
+  background:
+    linear-gradient(180deg, rgb(255 255 255 / 0.98), rgb(247 241 228 / 0.95));
+  box-shadow: 0 24px 70px rgb(17 17 17 / 0.1);
+}
+
+html[data-contrast="high"] .hero-surface {
+  border-color: rgb(17 17 17 / 0.16);
 }
 
 html[data-contrast="high"] .hero-surface::before,
@@ -117,13 +128,13 @@ html[data-contrast="high"] .stat-tile,
 html[data-contrast="high"] .surface-subtle,
 html[data-contrast="high"] header,
 html[data-contrast="high"] footer {
-  border-color: rgb(255 255 255 / 0.45);
+  border-color: rgb(17 17 17 / 0.22);
 }
 
 html[data-contrast="high"] .primary-button {
-  background: #ffffff;
-  color: #000000;
-  box-shadow: none;
+  background: #111111;
+  color: #ffffff;
+  box-shadow: 0 16px 32px rgb(17 17 17 / 0.18);
 }
 
 html[data-contrast="high"] .secondary-button,
@@ -136,8 +147,25 @@ html[data-contrast="high"] .stat-tile,
 html[data-contrast="high"] .tag-pill,
 html[data-contrast="high"] .stack-pill,
 html[data-contrast="high"] .accessibility-shell {
-  background: #000000;
+  background: #fffdf8;
+  color: #111111;
+}
+
+html[data-contrast="high"] .eyebrow-badge,
+html[data-contrast="high"] .tag-pill {
+  background: #111111;
   color: #ffffff;
+  border-color: #111111;
+}
+
+html[data-contrast="high"] .stack-pill {
+  border-color: rgb(17 17 17 / 0.18);
+}
+
+html[data-contrast="high"] .accessibility-button[aria-pressed="true"] {
+  background: #111111;
+  color: #ffffff;
+  border-color: #111111;
 }
 
 html[data-contrast="high"] .accessibility-button:hover,
@@ -145,21 +173,26 @@ html[data-contrast="high"] .secondary-button:hover,
 html[data-contrast="high"] .icon-link:hover,
 html[data-contrast="high"] .ios-install-close:hover,
 html[data-contrast="high"] .project-card:hover {
-  background: #111111;
-  box-shadow: none;
+  background: #f0e8d7;
+  box-shadow: 0 16px 42px rgb(17 17 17 / 0.12);
 }
 
 html[data-contrast="high"] .project-card {
-  box-shadow: none;
+  box-shadow: 0 16px 42px rgb(17 17 17 / 0.08);
+}
+
+html[data-contrast="high"] .accessibility-button[aria-pressed="true"]:hover {
+  background: #111111;
+  color: #ffffff;
 }
 
 html[data-contrast="high"] .primary-button:hover {
-  background: #f0f0f0;
+  background: #2a2a2a;
 }
 
 html[data-contrast="high"] :focus-visible {
-  outline-color: #ffffff;
-  box-shadow: 0 0 0 4px rgb(255 255 255 / 0.18);
+  outline-color: #111111;
+  box-shadow: 0 0 0 4px rgb(17 17 17 / 0.16);
 }
 
 .theme-root {

@@ -20,7 +20,7 @@ export function AccessibilityWidget() {
           aria-pressed={highContrast}
           className={`accessibility-button flex min-h-12 min-w-12 items-center justify-center rounded-[1rem] border ${
             highContrast
-              ? "border-[color:var(--color-accent)] bg-[color:var(--color-primary)]/35 text-[color:var(--color-text-strong)]"
+              ? "border-[color:var(--color-accent)] bg-[color:var(--color-primary)] text-[color:var(--color-white)]"
               : "border-white/10 bg-white/5 text-[color:var(--color-text)] hover:bg-white/10"
           }`}
         >
@@ -55,7 +55,7 @@ export function AccessibilityWidget() {
               behavior: "smooth",
             })
           }
-          aria-label="Voltar ao topo da página"
+          aria-label="Voltar ao topo da pagina"
           className="accessibility-button flex min-h-12 min-w-12 items-center justify-center rounded-[1rem] border border-white/10 bg-white/5 text-sm font-medium text-[color:var(--color-text)] hover:bg-white/10"
         >
           <FaArrowUp aria-hidden="true" />

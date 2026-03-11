@@ -27,12 +27,12 @@ export default function Home() {
             </span>
             <div className="space-y-5 sm:space-y-6">
               <h1 className="max-w-4xl text-3xl font-semibold tracking-[-0.04em] text-[color:var(--color-text-strong)] sm:text-5xl md:text-6xl lg:text-7xl">
-                Arthur Pires desenvolve interfaces escuras, elegantes e
-                consistentes para experi&ecirc;ncias digitais modernas.
+                Arthur Pires desenvolve sistemas para produtos digitais.
               </h1>
               <p className="max-w-2xl text-base leading-8 text-[color:var(--color-text)]/82 sm:text-xl sm:leading-9">
                 Projetos com foco em identidade visual, componentiza&ccedil;&atilde;o,
-                acessibilidade e uma entrega front-end preparada para evoluir.
+                acessibilidade e desenvolvimento preparado para evoluir em cada etapa
+                do sistema.
               </p>
             </div>
             <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap">
@@ -89,7 +89,8 @@ export default function Home() {
                   Disponibilidade
                 </p>
                 <p className="mt-3 text-base leading-7 text-[color:var(--color-text)]/82">
-                  Aberto para oportunidades em front-end, projetos autorais e colabora&ccedil;&otilde;es.
+                  Dispon&iacute;vel para todos os tipos de sistemas, projetos autorais e
+                  colabora&ccedil;&otilde;es.
                 </p>
               </div>
               <div className="surface-subtle">
