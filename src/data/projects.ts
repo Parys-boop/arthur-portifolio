@@ -27,7 +27,7 @@ export const projects: Project[] = [
       "Separação entre responsabilidades de rota, serviço e tratamento de dados.",
       "Base adequada para integração com aplicações web e fluxos de leitura.",
     ],
-    stack: ["Node.js", "JavaScript", "API REST", "GitHub"],
+    stack: ["C#", "ASP.NET Core", "SQL Server", "GitHub"],
   },
   {
     slug: "plataforma-ead-matriculas",
